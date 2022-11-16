@@ -16,7 +16,7 @@
     background-size: 15px 10px;
     background-position: right;
     height: 45px;
-    align-items: center;
+    align-card-images: center;
 }
 .dropdown-content {
 	display: none;
@@ -26,6 +26,7 @@
 	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
 	padding: 12px 16px;
 	z-index: 1;
+	top: 40px;
 }
 .dropdown:active .dropdown-content {
 	display: block;
@@ -50,7 +51,7 @@
     border-bottom: 1px solid #efefef;
     bottom: 0;
 }
-.logoImage{
+#pinterest-icon{
 	background-image: url(logoPinterest.png);
     background-repeat: no-repeat;
     width: 40px;
@@ -68,12 +69,12 @@
     background-position: center;
     border-radius: 20px;
 }
-.logoImage:hover{
+#pinterest-icon:hover{
 	background-color: #efefef;
 }
 .buttons-right-menu{
 	display: inline-flex;
-	align-items: center;
+	align-card-images: center;
 	width: 85%;
 	justify-content: space-around;
 }
@@ -99,30 +100,36 @@
     border-radius: 25px;
     width: 70%;
 }
-.buttons-right-menu div.search-input:hover{
-	background-color: #d0d0d0;
-	color: grey;
-}
-.text-search{
-	padding-left: 30px;
-	background-image: url(lupa.png) ;
-	background-repeat: no-repeat;
-	background-size: contain;
-	background-position: center;
-	width: 10px;
-    height: 20px;
+
+
+.text-search {
+    background-image: url(lupa.png);
+    background-repeat: no-repeat;
+    background-size: 20px 20px;
+    background-position: 13px;
+    width: 60%;
+    background-color: #efefef;
+    border-radius: 20px;
 }
 .text-search-footer{
-	padding-left: 30px;
-	background-image: url(lupa.png) ;
-	background-repeat: no-repeat;
-	background-size: contain;
-	background-position: center;
-	width: 10px;
-    height: 20px;
+		padding-left: 30px;
+		padding-left: 30px;
+    background-image: url(lupa.png);
+    background-repeat: no-repeat;
+    background-size: 25px;
+    background-position: 6px 6px;
+    width: 10px;
+    height: 35px;
 }
-.notification{
-	background-image: url(campana.png);
+#fname{
+		border: none;
+    background-color: #efefef;
+    margin: 15px 45px;
+    font-size: 16px;
+    width: 90%;
+}
+#notification{
+	  background-image: url(campana.png);
     background-repeat: no-repeat;
     width: 40px;
     background-size: 23px 23px;
@@ -130,19 +137,19 @@
     height: 35px;
     border-radius: 20px;
 }
-div.notification:hover{
+div#notification:hover{
 	background-color: #efefef;
 }
-div.message:hover{
+div#message:hover{
 	background-color: #efefef;
 }
-div.user:hover{
+div#profile-img:hover{
 	background-color: #efefef;
 }
 div.more-about-user:hover{
 	background-color: #efefef;
 }
-.message{
+#message{
 	background-image: url(message.png) ;
     background-repeat: no-repeat;
     width: 40px;
@@ -152,7 +159,7 @@ div.more-about-user:hover{
     border-radius: 20px;
 }
 
-.user{
+#profile-img{
 	  background-image: url(user.png) ;
     background-repeat: no-repeat;
     width: 40px;
@@ -183,7 +190,7 @@ div.more-about-user:hover{
     position: absolute;
     right: 55px;
     z-index: 1;
-    bottom: 45px;
+    bottom: 48px;
     display: none;
 }
 .upload:hover{
@@ -202,13 +209,13 @@ div.more-about-user:hover{
     position: absolute;
     right: 13px;
     z-index: 1;
-    bottom: 45px;
+    bottom: 48px;
     display: none;
 }
 .more:hover{
     opacity: 0.9;
 }
-.global{
+#content{
     margin: auto;
     width: 83%;
 }
@@ -217,9 +224,9 @@ div.more-about-user:hover{
 	  display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-gap: 10px;
-    align-items: flex-start;
+    align-card-images: flex-start;
 }
-.item{
+.card-image{
 	position: relative;
 	filter: brightness(0.9);}
 .save{
@@ -273,7 +280,7 @@ div.more-about-user:hover{
 	    grid-template-columns: repeat(2, 1fr);
 	    grid-gap: 5px;
 	}
-	.global{
+	#content{
 		width: 100%;
 		margin: auto;
 	}
@@ -298,7 +305,7 @@ div.more-about-user:hover{
 	.grid-container img {
 	    width: 100%;
 	}
-	.global{
+	#content{
 		width: 100%;
 		margin: auto;
 	}
