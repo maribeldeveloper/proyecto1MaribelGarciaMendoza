@@ -1,14 +1,14 @@
 *{
-	margin: 0;
-	padding: 0;
-	text-decoration: none;
-	box-sizing: border-box;
-	list-style: none;
-	font-family: sans-serif;
-	color: inherit;
+		margin: 0;
+		padding: 0;
+		text-decoration: none;
+		box-sizing: border-box;
+		list-style: none;
+		font-family: sans-serif;
+		color: inherit;
 }
 .dropdown {
-	position: relative;
+		position: relative;
     display: inline-flex;
     background-image: url(flechablack.png);
     background-repeat: no-repeat;
@@ -19,21 +19,21 @@
     align-card-images: center;
 }
 .dropdown-content {
-	display: none;
-	position: absolute;
-	background-color: white;
-	min-width: 160px;
-	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-	padding: 12px 16px;
-	z-index: 1;
-	top: 40px;
+		display: none;
+		position: absolute;
+		background-color: white;
+		min-width: 160px;
+		box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+		padding: 12px 16px;
+		z-index: 1;
+		top: 40px;
 }
 .dropdown:active .dropdown-content {
-	display: block;
-	color:  black;
+		display: block;
+		color:  black;
 }
-.menu{
-	position: -webkit-sticky;
+#navbar-pinterest{
+		position: -webkit-sticky;
   	position: sticky;
   	top: 0;
   	width: 100%;
@@ -52,7 +52,7 @@
     bottom: 0;
 }
 #pinterest-icon{
-	background-image: url(logoPinterest.png);
+		background-image: url(logoPinterest.png);
     background-repeat: no-repeat;
     width: 40px;
     background-size: 27px;
@@ -61,7 +61,7 @@
     border-radius: 20px;
 }
 .logoFooter{
-	background-image: url(home.jpeg);
+		background-image: url(home.jpeg);
     background-repeat: no-repeat;
     width: 40px;
     background-size: 27px;
@@ -70,38 +70,36 @@
     border-radius: 20px;
 }
 #pinterest-icon:hover{
-	background-color: #efefef;
+		background-color: #efefef;
 }
 .buttons-right-menu{
-	display: inline-flex;
-	align-card-images: center;
-	width: 85%;
-	justify-content: space-around;
+		display: inline-flex;
+		align-card-images: center;
+		width: 85%;
+		justify-content: space-around;
 }
-.buttons-right-menu div{
-	font-size: 16px;
-	box-sizing: border-box;
-	border-radius: 25px;
-	padding: 14px;
+.buttons-right-menu li{
+		font-size: 16px;
+		box-sizing: border-box;
+		border-radius: 25px;
+		padding: 14px;
 }
-.buttons-right-menu div.active{
-	background: black;
-	color: white;
+.buttons-right-menu li.active{
+		background: black;
+		color: white;
 }
 .buttons-left-menu{
-	width: 14%;
-	display: inline-flex;
-	box-sizing: border-box;
-	justify-content: space-around;
+		width: 14%;
+		display: inline-flex;
+		box-sizing: border-box;
+		justify-content: space-around;
 }
 .search-input{
-	background: #efefef;
+		background: #efefef;
     color: grey;
     border-radius: 25px;
     width: 70%;
 }
-
-
 .text-search {
     background-image: url(lupa.png);
     background-repeat: no-repeat;
@@ -121,7 +119,7 @@
     width: 10px;
     height: 35px;
 }
-#fname{
+.finder{
 		border: none;
     background-color: #efefef;
     margin: 15px 45px;
@@ -138,19 +136,19 @@
     border-radius: 20px;
 }
 div#notification:hover{
-	background-color: #efefef;
+		background-color: #efefef;
 }
 div#message:hover{
-	background-color: #efefef;
+		background-color: #efefef;
 }
 div#profile-img:hover{
-	background-color: #efefef;
+		background-color: #efefef;
 }
 div.more-about-user:hover{
-	background-color: #efefef;
+		background-color: #efefef;
 }
 #message{
-	background-image: url(message.png) ;
+		background-image: url(message.png) ;
     background-repeat: no-repeat;
     width: 40px;
     background-size: 23px 23px;
@@ -158,7 +156,6 @@ div.more-about-user:hover{
     height: 35px;
     border-radius: 20px;
 }
-
 #profile-img{
 	  background-image: url(user.png) ;
     background-repeat: no-repeat;
@@ -169,7 +166,7 @@ div.more-about-user:hover{
     border-radius: 20px; 
 }
 .more-about-user{
-	background-image: url(flechagrey.png) ;
+		background-image: url(flechagrey.png) ;
     background-repeat: no-repeat;
     width: 40px;
     background-size: 15px 10px;
@@ -190,7 +187,7 @@ div.more-about-user:hover{
     position: absolute;
     right: 55px;
     z-index: 1;
-    bottom: 48px;
+    bottom: 50px;
     display: none;
 }
 .upload:hover{
@@ -209,7 +206,7 @@ div.more-about-user:hover{
     position: absolute;
     right: 13px;
     z-index: 1;
-    bottom: 48px;
+    bottom: 50px;
     display: none;
 }
 .more:hover{
@@ -227,8 +224,8 @@ div.more-about-user:hover{
     align-card-images: flex-start;
 }
 .card-image{
-	position: relative;
-	filter: brightness(0.9);}
+		position: relative;
+		filter: brightness(0.9);}
 .save{
 	  position: absolute;
     padding: 12px;
@@ -242,10 +239,10 @@ div.more-about-user:hover{
     z-index: 1;
 }
 .save:hover {
-  background-color: darkred;
+  	background-color: darkred;
 }
 .text{
-	font-size: 12;
+	  font-size: 12;
     background-image: url(userText.jpeg);
     background-repeat: no-repeat;
     background-size: 35px 35px;
@@ -254,12 +251,12 @@ div.more-about-user:hover{
     padding-left: 40px;
 }
 .grid-container img {
-  background-color: rgba(255, 255, 255, 0.8);
-  font-size: 30px;
-  border-radius:30px;
+	  background-color: rgba(255, 255, 255, 0.8);
+	  font-size: 30px;
+	  border-radius:30px;
 }
 .grid-container img:hover {
-  filter: brightness(0.6);
+  	filter: brightness(0.6);
 }
 .footer{
 		display: none;
@@ -290,7 +287,7 @@ div.more-about-user:hover{
 	.buttons-right-menu {
 	    width: 100%;
 	}
-	.menu{
+	#navbar-pinterest{
 		display: none;
 	}
 	.footer{
@@ -312,7 +309,7 @@ div.more-about-user:hover{
 	.buttons-right-menu {
 	    width: 100%;
 	}
-	.menu{
+	#navbar-pinterest{
 		display: none;
 	}
 	.footer{
