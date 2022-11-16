@@ -6,6 +6,20 @@
 	<link rel="stylesheet" type="text/css" href="stylepinterest.css">
 	<link rel="shortcut icon" href="icon.png">
 	<title>Pinterest</title>
+	<script>
+		function bigImg(x) {
+		  x.getElementsByClassName("save")[0].style.display = "flex";
+		  x.getElementsByClassName("upload")[0].style.display = "block";
+		  x.getElementsByClassName("more")[0].style.display = "block";
+		  x.getElementsByClassName("imgPint")[0].style.filter = "brightness(0.6)";
+		}
+		function normalImg(x) {
+		  x.getElementsByClassName("save")[0].style.display = "none";
+		  x.getElementsByClassName("upload")[0].style.display = "none";
+		  x.getElementsByClassName("more")[0].style.display = "none";
+		  x.getElementsByClassName("imgPint")[0].style.filter = "brightness(0.9)";
+		}
+	</script>
 </head>
 <body>
 	<header class="menu">
@@ -34,38 +48,38 @@
 
 	<section class="global">
 		<div class="grid-container">
-		  <div class="item"><div class="save">Guardar</div><img src="flor1.jpeg"></div>
-		  <div class="item"><div class="save">Guardar</div><img src="flor2.jpeg"><p class="text">Used since the 1500</p></div>
-		  <div class="item"><div class="save">Guardar</div><img src="flor8.jpeg"><p class="text">The standard Lorem Ipsum passages</p></div> 
-		  <div class="item"><div class="save">Guardar</div><img src="flor4.jpeg"></div>
-		  <div class="item"><div class="save">Guardar</div><img src="flor5.jpeg"></div>
-		  <div class="item"><div class="save">Guardar</div><img src="flor6.jpeg"><p class="text">Consectetur adipiscing elit,</p></div>
-		  <div class="item"><div class="save">Guardar</div><img src="flor7.jpeg"></div>
-		  <div class="item"><div class="save">Guardar</div><img src="flor8.jpeg"><p class="text">Used since the 1500</p></div>
-		  <div class="item"><div class="save">Guardar</div><img src="flor1.jpeg"></div>
-		  <div class="item"><div class="save">Guardar</div><img src="flor2.jpeg"></div>
-		  <div class="item"><div class="save">Guardar</div><img src="flor8.jpeg"><p class="text">Used since the 1500</p></div> 
-		  <div class="item"><div class="save">Guardar</div><img src="flor4.jpeg"></div>
-		  <div class="item"><div class="save">Guardar</div><img src="flor5.jpeg"></div>
-		  <div class="item"><div class="save">Guardar</div><img src="flor6.jpeg"></div>
-		  <div class="item"><div class="save">Guardar</div><img src="flor7.jpeg"></div>
-		  <div class="item"><div class="save">Guardar</div><img src="flor8.jpeg"></div>
-		  <div class="item"><div class="save">Guardar</div><img src="flor1.jpeg"></div>
-		  <div class="item"><div class="save">Guardar</div><img src="flor2.jpeg"></div>
-		  <div class="item"><div class="save">Guardar</div><img src="flor8.jpeg"><p class="text">Used since the 1500</p></div> 
-		  <div class="item"><div class="save">Guardar</div><img src="flor4.jpeg"></div>
-		  <div class="item"><div class="save">Guardar</div><img src="flor5.jpeg"></div>
-		  <div class="item"><div class="save">Guardar</div><img src="flor6.jpeg"></div>
-		  <div class="item"><div class="save">Guardar</div><img src="flor7.jpeg"></div>
-		  <div class="item"><div class="save">Guardar</div><img src="flor8.jpeg"><p class="text">Used since the 1500</p></div>
-		  <div class="item"><div class="save">Guardar</div><img src="flor1.jpeg"></div>
-		  <div class="item"><div class="save">Guardar</div><img src="flor2.jpeg"></div>
-		  <div class="item"><div class="save">Guardar</div><img src="flor8.jpeg"><p class="text">Used since the 1500</p></div> 
-		  <div class="item"><div class="save">Guardar</div><img src="flor4.jpeg"></div>
-		  <div class="item"><div class="save">Guardar</div><img src="flor5.jpeg"></div>
-		  <div class="item"><div class="save">Guardar</div><img src="flor6.jpeg"></div>
-		  <div class="item"><div class="save">Guardar</div><img src="flor7.jpeg"></div>
-		  <div class="item"><div class="save">Guardar</div><img src="flor8.jpeg"><p class="text">Used since the 1500</p></div>
+		  <div onmouseover="bigImg(this)" onmouseout="normalImg(this)" class="item"><div class="save">Guardar</div><img class="imgPint" src="flor1.jpeg"><div class="upload"></div><div class="more"></div></div>
+		  <div onmouseover="bigImg(this)" onmouseout="normalImg(this)" class="item"><div class="save">Guardar</div><img class="imgPint" src="flor2.jpeg"><p class="text">Used since the 1500</p><div class="upload"></div><div class="more"></div></div>
+		  <div onmouseover="bigImg(this)" onmouseout="normalImg(this)" class="item"><div class="save">Guardar</div><img class="imgPint" src="flor8.jpeg"><p class="text">The standard Lorem Ipsum passages</p><div class="upload"></div><div class="more"></div></div> 
+		  <div onmouseover="bigImg(this)" onmouseout="normalImg(this)" class="item"><div class="save">Guardar</div><img class="imgPint" src="flor4.jpeg"><div class="upload"></div><div class="more"></div></div>
+		  <div onmouseover="bigImg(this)" onmouseout="normalImg(this)" class="item"><div class="save">Guardar</div><img class="imgPint" src="flor5.jpeg"><div class="upload"></div><div class="more"></div></div>
+		  <div onmouseover="bigImg(this)" onmouseout="normalImg(this)" class="item"><div class="save">Guardar</div><img class="imgPint" src="flor6.jpeg"><div class="upload"></div><div class="more"></div><p class="text">Consectetur adipiscing elit,</p></div>
+		  <div onmouseover="bigImg(this)" onmouseout="normalImg(this)" class="item"><div class="save">Guardar</div><img class="imgPint" src="flor7.jpeg"><div class="upload"></div><div class="more"></div></div>
+		  <div onmouseover="bigImg(this)" onmouseout="normalImg(this)" class="item"><div class="save">Guardar</div><img class="imgPint" src="flor8.jpeg"><p class="text">Used since the 1500</p><div class="upload"></div><div class="more"></div></div>
+		  <div onmouseover="bigImg(this)" onmouseout="normalImg(this)" class="item"><div class="save">Guardar</div><img class="imgPint" src="flor1.jpeg"><div class="upload"></div><div class="more"></div></div>
+		  <div onmouseover="bigImg(this)" onmouseout="normalImg(this)" class="item"><div class="save">Guardar</div><img class="imgPint" src="flor2.jpeg"><div class="upload"></div><div class="more"></div></div>
+		  <div onmouseover="bigImg(this)" onmouseout="normalImg(this)" class="item"><div class="save">Guardar</div><img class="imgPint" src="flor8.jpeg"><p class="text">Used since the 1500</p><div class="upload"></div><div class="more"></div></div> 
+		  <div onmouseover="bigImg(this)" onmouseout="normalImg(this)" class="item"><div class="save">Guardar</div><img class="imgPint" src="flor4.jpeg"><div class="upload"></div><div class="more"></div></div>
+		  <div onmouseover="bigImg(this)" onmouseout="normalImg(this)" class="item"><div class="save">Guardar</div><img class="imgPint" src="flor5.jpeg"><div class="upload"></div><div class="more"></div></div>
+		  <div onmouseover="bigImg(this)" onmouseout="normalImg(this)" class="item"><div class="save">Guardar</div><img class="imgPint" src="flor6.jpeg"><div class="upload"></div><div class="more"></div></div>
+		  <div onmouseover="bigImg(this)" onmouseout="normalImg(this)" class="item"><div class="save">Guardar</div><img class="imgPint" src="flor7.jpeg"><div class="upload"></div><div class="more"></div></div>
+		  <div onmouseover="bigImg(this)" onmouseout="normalImg(this)" class="item"><div class="save">Guardar</div><img class="imgPint" src="flor8.jpeg"><div class="upload"></div><div class="more"></div></div>
+		  <div onmouseover="bigImg(this)" onmouseout="normalImg(this)" class="item"><div class="save">Guardar</div><img class="imgPint" src="flor1.jpeg"><div class="upload"></div><div class="more"></div></div>
+		  <div onmouseover="bigImg(this)" onmouseout="normalImg(this)" class="item"><div class="save">Guardar</div><img class="imgPint" src="flor2.jpeg"><div class="upload"></div><div class="more"></div></div>
+		  <div onmouseover="bigImg(this)" onmouseout="normalImg(this)" class="item"><div class="save">Guardar</div><img class="imgPint" src="flor8.jpeg"><p class="text">Used since the 1500</p><div class="upload"></div><div class="more"></div></div> 
+		  <div onmouseover="bigImg(this)" onmouseout="normalImg(this)" class="item"><div class="save">Guardar</div><img class="imgPint" src="flor4.jpeg"><div class="upload"></div><div class="more"></div></div>
+		  <div onmouseover="bigImg(this)" onmouseout="normalImg(this)" class="item"><div class="save">Guardar</div><img class="imgPint" src="flor5.jpeg"><div class="upload"></div><div class="more"></div></div>
+		  <div onmouseover="bigImg(this)" onmouseout="normalImg(this)" class="item"><div class="save">Guardar</div><img class="imgPint" src="flor6.jpeg"><div class="upload"></div><div class="more"></div></div>
+		  <div onmouseover="bigImg(this)" onmouseout="normalImg(this)" class="item"><div class="save">Guardar</div><img class="imgPint" src="flor7.jpeg"><div class="upload"></div><div class="more"></div></div>
+		  <div onmouseover="bigImg(this)" onmouseout="normalImg(this)" class="item"><div class="save">Guardar</div><img class="imgPint" src="flor8.jpeg"><p class="text">Used since the 1500</p><div class="upload"></div><div class="more"></div></div>
+		  <div onmouseover="bigImg(this)" onmouseout="normalImg(this)" class="item"><div class="save">Guardar</div><img class="imgPint" src="flor1.jpeg"><div class="upload"></div><div class="more"></div></div>
+		  <div onmouseover="bigImg(this)" onmouseout="normalImg(this)" class="item"><div class="save">Guardar</div><img class="imgPint" src="flor2.jpeg"><div class="upload"></div><div class="more"></div></div>
+		  <div onmouseover="bigImg(this)" onmouseout="normalImg(this)" class="item"><div class="save">Guardar</div><img class="imgPint" src="flor8.jpeg"><p class="text">Used since the 1500</p><div class="upload"></div><div class="more"></div></div> 
+		  <div onmouseover="bigImg(this)" onmouseout="normalImg(this)" class="item"><div class="save">Guardar</div><img class="imgPint" src="flor4.jpeg"><div class="upload"></div><div class="more"></div></div>
+		  <div onmouseover="bigImg(this)" onmouseout="normalImg(this)" class="item"><div class="save">Guardar</div><img class="imgPint" src="flor5.jpeg"><div class="upload"></div><div class="more"></div></div>
+		  <div onmouseover="bigImg(this)" onmouseout="normalImg(this)" class="item"><div class="save">Guardar</div><img class="imgPint" src="flor6.jpeg"><div class="upload"></div><div class="more"></div></div>
+		  <div onmouseover="bigImg(this)" onmouseout="normalImg(this)" class="item"><div class="save">Guardar</div><img class="imgPint" src="flor7.jpeg"><div class="upload"></div><div class="more"></div></div>
+		  <div onmouseover="bigImg(this)" onmouseout="normalImg(this)" class="item"><div class="save">Guardar</div><img class="imgPint" src="flor8.jpeg"><p class="text">Used since the 1500</p><div class="upload"></div><div class="more"></div></div>
 		</div>
 	</section>
 	<footer class="footer">
