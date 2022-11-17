@@ -144,7 +144,7 @@ div#message:hover{
 div#profile-img:hover{
 		background-color: #efefef;
 }
-div.more-about-user:hover{
+div#more-about-user:hover{
 		background-color: #efefef;
 }
 #message{
@@ -165,7 +165,7 @@ div.more-about-user:hover{
     height: 35px;
     border-radius: 20px; 
 }
-.more-about-user{
+#more-about-user{
 		background-image: url(flechagrey.png) ;
     background-repeat: no-repeat;
     width: 40px;
